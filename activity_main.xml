@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/maxresdefault"
+    >
+
+    <Button
+        android:id="@+id/button_teamone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="home_button"
+        android:text="Home Team"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teamOne_scoreDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_teamone"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/teamTwo_scoreDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_teamtwo"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button_teamtwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_light"
+        android:text="Away Team"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:onClick="away_button"/>
+
+</RelativeLayout>
